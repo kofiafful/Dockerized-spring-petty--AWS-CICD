@@ -7,4 +7,4 @@ RUN apt update && apt install -y nano curl
 COPY . .
 RUN mvn clean install
 
-ENTRYPOINT ["java", "-jar" "target/*.jar"]
+CMD ["java", "-jar" "target/*.jar"]
